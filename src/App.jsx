@@ -8,14 +8,13 @@ import { Route , Routes ,BrowserRouter} from 'react-router-dom'
 export default function App() {
   return (
     <>
-    
     <BrowserRouter>
     <Navbar />
      <Routes className='m-auto'>
       <Route className='nav-link' path='/'  element={<Home />} />
       <Route className='nav-link ' path='/products'  element={<Products />} />
       <Route className='nav-link' path='/resturent' element={<Resturnt />} />
-      <Route  path='*' element={ <h2>Sad</h2>} />
+      <Route className='text-center mt-2'  path='*' element={ <h2>Page not Found</h2>} />
     </Routes>
     </BrowserRouter>
    
